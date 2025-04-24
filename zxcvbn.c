@@ -22,7 +22,7 @@
  *
  **********************************************************************************/
 
-#include <zxcvbn.h>
+#include "zxcvbn.h"
 #include <ctype.h>
 #include <string.h>
 #include <stdint.h>
@@ -940,7 +940,7 @@ typedef struct
 } SpatialMatchInfo_t;
 
 /* Shift mapping, characters in pairs: first is shifted, second un-shifted. Ordered for increasing shifted character code.*/
-/* Note: on a UK keyboard  \243 is the £ (Pound stirling),  \244 is the ¤ (Euro),  \254 is the ¬ (Not sign)  */
+/* Note: on a UK keyboard  \243 is the ï¿½ (Pound stirling),  \244 is the ï¿½ (Euro),  \254 is the ï¿½ (Not sign)  */
 static const uint8_t UK_Shift[] = "!1\"2$4%5&7(9)0*8:;<,>.?/@'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz^6_-{[|\\}]~#\2433\2444\254`";
 static const uint8_t US_Shift[] = "!1\"'#3$4%5&7(9)0*8:;<,>.?/@2AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz^6_-{[|\\}]~`";
 
